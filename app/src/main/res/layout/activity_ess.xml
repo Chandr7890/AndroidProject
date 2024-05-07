@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ESS">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/topbar"
+        android:orientation="horizontal"
+
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Epworth Sleepiness Score"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        >
+    <TableRow
+        android:background="@color/blue">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="*How likely are you to doze
+
+                          *This refers to your usual way in the recent times
+                          *Even if you have not done some of these things
+                           "
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:layout_weight="4"
+            android:textStyle="bold"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0=Would never doze
+                          1=Slight chance of doze
+                          2=Moderate chance of dozing
+                          3=High Chance of dozing
+                          "
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:layout_weight="4"
+            android:textStyle="bold"
+
+            />
+
+    </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="100dp">
+
+        <TableRow android:background="@color/blue"
+            android:layout_marginTop="100dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Situation"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Chance of Dozing"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow android:background="@color/white">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:padding="10dp"
+                android:text="Sitting inactive in public place"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+
+
+                    >
+
+                    <RadioButton
+                        android:id="@+id/rone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+
+                        android:text="1"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/rtwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+
+                        android:text="2"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/rthree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+                        android:text="3"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/rfour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+                        android:text="4"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow android:background="@color/white">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:padding="10dp"
+                android:text="Sitting quietly after the lunch without alcohol"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radio1Group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+
+
+                    >
+
+                    <RadioButton
+                        android:id="@+id/r1one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+
+                        android:text="1"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/r1two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+
+                        android:text="2"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/r1three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+                        android:text="3"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/r1four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+                        android:text="4"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow android:background="@color/white">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:padding="10dp"
+                android:text="Sitting and Reading"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radio2Group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+
+
+                    >
+
+                    <RadioButton
+                        android:id="@+id/r2one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+
+                        android:text="1"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/r2two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+
+                        android:text="2"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/r2three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+                        android:text="3"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/r2four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+                        android:text="4"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow android:background="@color/white">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:padding="10dp"
+                android:text="Watching TV"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radio3Group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+
+
+                    >
+
+                    <RadioButton
+                        android:id="@+id/r3one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+
+                        android:text="1"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/r3two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+
+                        android:text="2"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/r3three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+                        android:text="3"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/r3four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+                        android:text="4"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow android:background="@color/white">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:padding="10dp"
+                android:text="Sitting and talking to somone"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radio4Group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+
+
+                    >
+
+                    <RadioButton
+                        android:id="@+id/r4one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+
+                        android:text="1"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/r4two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+
+                        android:text="2"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/r4three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+                        android:text="3"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/r4four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+                        android:text="4"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow android:background="@color/white">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:padding="10dp"
+                android:text="Lying down to rest during the day when circumstances permit"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radio5Group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+
+
+                    >
+
+                    <RadioButton
+                        android:id="@+id/r5one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+
+                        android:text="1"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/r5two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+
+                        android:text="2"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/r5three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+                        android:text="3"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/r5four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+                        android:text="4"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow android:background="@color/white">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:padding="10dp"
+                android:text="As a Passenger in a car without break"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radio6Group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+
+
+                    >
+
+                    <RadioButton
+                        android:id="@+id/r6one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+
+                        android:text="1"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/r6two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+
+                        android:text="2"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/r6three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+                        android:text="3"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/r6four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+                        android:text="4"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow android:background="@color/white">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:padding="10dp"
+                android:text="In a car while stopped for a few minutes in traffic"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radio7Group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+
+
+                    >
+
+                    <RadioButton
+                        android:id="@+id/r7one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+
+                        android:text="1"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/r7two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+
+                        android:text="2"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/r7three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+                        android:text="3"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/r7four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+                        android:text="4"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </TableRow>
+
+
+    </TableLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/radiusc1"
+        android:text="Submit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white" />
+
+
+
+</RelativeLayout>

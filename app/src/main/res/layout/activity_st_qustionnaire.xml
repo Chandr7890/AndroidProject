@@ -1,0 +1,1357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".stQustionnaire">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/topbar"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ST GEORGE'S RESPIRATORY QUESTIONNAIRE"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            />
+    </RelativeLayout>
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PART 1"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1) எனக்கு இருமல்"
+                    android:textColor="@color/black"/>
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/r1o1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="வாரத்தில் பெரும்பாலான நாள்" />
+
+                    <RadioButton
+                        android:id="@+id/r1o2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="வாரத்தில் பல நாட்கள்" />
+                    <RadioButton
+                        android:id="@+id/r1o3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="சுவாச நோய்த்தொற்றுகளுடன் மட்டுமே" />
+
+                    <RadioButton
+                        android:id="@+id/r1o4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="இல்லவே இல்லை" />
+
+                </RadioGroup>
+
+
+
+           </LinearLayout>  <!--end-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2) நான் சளி (சளி) கொண்டு வருகிறேன்"
+                    android:textColor="@color/black"
+                    />
+                <RadioGroup
+                    android:id="@+id/radioGroup2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/r2o1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="வாரத்தில் பெரும்பாலான நாள்" />
+
+                    <RadioButton
+                        android:id="@+id/r2o2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="வாரத்தில் பல நாட்கள்" />
+                    <RadioButton
+                        android:id="@+id/r2o3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="சுவாச நோய்த்தொற்றுகளுடன் மட்டுமே" />
+
+                    <RadioButton
+                        android:id="@+id/r2o4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="இல்லவே இல்லை" />
+
+                </RadioGroup>
+            </LinearLayout><!--end-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:text="3) எனக்கு மூச்சு திணறல் உள்ளது"
+                    android:textColor="@color/black"/>
+                <RadioGroup
+                    android:id="@+id/radioGroup3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/r3o1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="வாரத்தில் பெரும்பாலான நாள்" />
+
+                    <RadioButton
+                        android:id="@+id/r3o2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="வாரத்தில் பல நாட்கள்" />
+                    <RadioButton
+                        android:id="@+id/r3o3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="இல்லவே இல்லை" />
+
+
+
+                </RadioGroup>
+
+
+
+            </LinearLayout><!--end-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4) எனக்கு மூச்சுத்திணறல் தாக்குதல் உள்ளது"
+                    android:textColor="@color/black"/>
+                <RadioGroup
+                    android:id="@+id/radioGroup4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/r4o1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="வாரத்தில் பெரும்பாலான நாள்" />
+
+
+                    <RadioButton
+                        android:id="@+id/r4o3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="வாரத்தில் பல நாட்கள்" />
+                    <RadioButton
+                        android:id="@+id/r4o4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="சுவாச நோய்த்தொற்றுகளுடன் மட்டுமே" />
+
+                    <RadioButton
+                        android:id="@+id/r4o5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="இல்லவே இல்லை" />
+
+                </RadioGroup>
+
+
+
+            </LinearLayout><!--end-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="5)கடந்த ஆண்டில் உங்களுக்கு மார்புப் பிரச்சனை எப்படி ஏற்பட்டது?"/>
+                <RadioGroup
+                    android:id="@+id/radioGroup5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/r5o1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3 அல்லது அதற்கு மேற்பட்ட தாக்குதல்கள்" />
+
+                    <RadioButton
+                        android:id="@+id/r5o2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 அல்லது 2 தாக்குதல்கள்" />
+                    <RadioButton
+                        android:id="@+id/r5o3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="இல்லை" />
+
+
+
+                </RadioGroup>
+
+
+
+            </LinearLayout><!--end-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="6) உங்களுக்கு எத்தனை முறை நல்ல நாட்கள் உள்ளன (சில சுவாச பிரச்சனைகளுடன் "/>
+                <RadioGroup
+                    android:id="@+id/radioGroup6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/r6o1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="நல்ல நாட்கள் இல்லை" />
+
+                    <RadioButton
+                        android:id="@+id/r6o2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="சில நாட்கள் நல்லது" />
+                    <RadioButton
+                        android:id="@+id/r6o3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="பெரும்பாலான நாட்கள் நன்றாக இருக்கும்" />
+
+                    <RadioButton
+                        android:id="@+id/r6o4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ஒவ்வொரு நாளும் நல்லது" />
+
+                </RadioGroup>
+
+
+
+            </LinearLayout><!--end-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="7)உங்களுக்கு மூச்சுத்திணறல் இருந்தால், நீங்கள் காலையில் எழுந்ததும் மோசமாக இருக்கும்"/>
+                <RadioGroup
+                    android:id="@+id/radioGroup7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/r7o1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ஆம்" />
+
+                    <RadioButton
+                        android:id="@+id/r7o2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="இல்லை" />
+                </RadioGroup>
+
+
+
+            </LinearLayout><!--end-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="பகுதி 2"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="8) உங்கள் சுவாச பிரச்சனைகளை எப்படி விவரிப்பீர்கள்?"/>
+                <RadioGroup
+                    android:id="@+id/radioGroup8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/r8o1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="எனக்கு நிறைய பிரச்சனைகள் அல்லது எனக்கு இருக்கும் மிக முக்கியமான உடல் பிரச்சனைகள்," />
+
+                    <RadioButton
+                        android:id="@+id/r8o2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="எனக்கு சில பிரச்சனைகளை ஏற்படுத்துங்கள்" />
+                    <RadioButton
+                        android:id="@+id/r8o3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="எந்த பிரச்சனையும் இல்லை" />
+                </RadioGroup>
+            </LinearLayout><!--end-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="9)பொதுவாக எந்தச் செயல்பாடுகள் உங்களுக்கு மூச்சுத்திணறலை ஏற்படுத்துகின்றன என்பதைப் பற்றிய கேள்வி. ஒவ்வொரு அறிக்கைக்கும், இந்த நாட்களில் உங்களுக்கு எது பொருந்தும் என்பதைச் சொல்லுங்கள்"/>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1">
+
+                <!-- Header row -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="பொய்"
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="உண்மை"
+                        android:padding="8dp" />
+
+                </TableRow>
+
+                <!-- Data rows -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="நீங்களே கழுவுதல் அல்லது ஆடை அணிதல்"
+                        android:padding="8dp" />
+
+                    <CheckBox
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="9b) வீட்டைச் சுற்றி நடப்பது"
+                        android:padding="8dp" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="9c) சமதளத்தில் வெளியில் நடப்பது"
+                        android:padding="8dp" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="9d) படிக்கட்டுகளில் ஏறி நடப்பது"
+                        android:padding="8dp" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="9e) மலைகள் மீது நடைபயிற்சி"
+                        android:padding="8dp" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </TableRow>
+
+            </TableLayout><!--end-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="10) உங்கள் இருமல் மற்றும் மூச்சுத் திணறல் பற்றி மேலும் சில கேள்விகள் .ஒவ்வொரு அறிக்கைக்கும் . இந்த நாட்களில் உங்களுக்கு எது பொருந்தும் என்று சொல்லுங்கள்."/>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+
+
+                >
+
+                <!-- Header row -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="பொய்"
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="உண்மை"
+                        android:padding="8dp" />
+
+                </TableRow>
+
+                <!-- Data rows -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="10a) இருமல் வலிக்கிறது"
+                        android:padding="8dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="10b) இருமல் என்னை சோர்வடையச் செய்கிறது"
+                        android:padding="8dp" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="10c) பேசும் போது எனக்கு மூச்சுத் திணறல்"
+                        android:padding="8dp" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="10d) நான் குனியும் போது எனக்கு மூச்சு திணறல்"
+                        android:padding="8dp" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="10e) என் இருமல் அல்லது சுவாசம் என் தூக்கத்தைக் கெடுக்கிறது"
+                        android:padding="8dp" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="10f) நான் எளிதில் சோர்வடைகிறேன்"
+                        android:padding="8dp" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </TableRow><!--end-->
+            </TableLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="11) உங்கள் மார்புப் பிரச்சனையால் உங்களுக்கு ஏற்படக்கூடிய பிற விளைவுகள் பற்றிய கேள்விகள் .ஒவ்வொரு அறிக்கைக்கும் . இந்த நாட்களில் உங்களுக்கு எது பொருந்தும் என்று சொல்லுங்கள்"/>
+              <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                  >
+
+              </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="70dp"
+                    android:text="11a) என் இருமல் அல்லது சுவாசம் பொதுவில் சங்கடமாக இருக்கிறது"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    android:id="@+id/a1yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="ஆம்" />
+
+                <CheckBox
+                    android:id="@+id/a1no1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="இல்லை" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="120dp"
+                    android:text="11b) எனது சுவாசப் பிரச்சனைகள் எனது குடும்பத்தினருக்கோ, நண்பர்களுக்கோ அல்லது அண்டை வீட்டாருக்கோ தொந்தரவாக உள்ளது"
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/a2yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="ஆம்" />
+
+                <CheckBox
+                    android:id="@+id/a2no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="இல்லை" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="70dp"
+                    android:text="11c) மூச்சு விட முடியாத போது நான் பயப்படுகிறேன் அல்லது பீதி அடைகிறேன்"
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/a3yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="ஆம்" />
+
+                <CheckBox
+                    android:id="@+id/a3no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="இல்லை" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="60dp"
+                android:text="11d) என் சுவாச பிரச்சனைகளை நான் கட்டுப்படுத்தவில்லை என்று உணர்கிறேன்"
+                android:textColor="@color/black"
+                />
+
+            <CheckBox
+                android:id="@+id/a4yes1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:text="ஆம்" />
+
+            <CheckBox
+                android:id="@+id/a4no2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="இல்லை" />
+
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="90dp"
+                    android:text="11e) என் சுவாச பிரச்சனைகளால் நான் பலவீனமாகிவிட்டேன் அல்லது செல்லாதவனாக மாறிவிட்டேன்"
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/a5yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="ஆம்" />
+
+                <CheckBox
+                    android:id="@+id/a5no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="இல்லை" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="52dp"
+                    android:text="11f) உடற்பயிற்சி எனக்கு பாதுகாப்பானது அல்ல"
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/a6yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="ஆம்" />
+
+                <CheckBox
+                    android:id="@+id/a6no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="இல்லை" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="52dp"
+                    android:text="11g) எல்லாமே அதிக முயற்சியாகத் தெரிகிறது"
+                    android:textColor="@color/black"
+                    />
+                <CheckBox
+                    android:id="@+id/a7yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="ஆம்" />
+                <CheckBox
+                    android:id="@+id/a7no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="இல்லை" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12) உங்கள் சுவாச பிரச்சனைகளால் உங்கள் செயல்பாடுகள் எவ்வாறு பாதிக்கப்படலாம் என்பது பற்றிய கேள்விகள் இவை. ஒவ்வொரு அறிக்கைக்கும், உங்கள் சுவாசத்தின் காரணமாக எது உங்களுக்குப் பொருந்தும் என்பதைச் சொல்லுங்கள்"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="65dp"
+                    android:text="12a) நான் துவைக்க அல்லது ஆடை அணிவதற்கு நீண்ட நேரம் எடுத்துக்கொள்கிறேன்"
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/b1yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="ஆம்" />
+
+                <CheckBox
+                    android:id="@+id/b1no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="இல்லை" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="65dp"
+                    android:text="12b) என்னால் குளிக்கவோ அல்லது குளிக்கவோ முடியாது, அல்லது அதைச் செய்ய நீண்ட நேரம் எடுக்கும் "
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/b2yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="ஆம்" />
+
+                <CheckBox
+                    android:id="@+id/b2no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="இல்லை" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="65dp"
+                    android:text="12c) நான் மற்றவர்களை விட மெதுவாக நடக்கிறேன், அல்லது ஓய்வெடுக்க நிறுத்துகிறேன்"
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/b3yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="ஆம்" />
+
+                <CheckBox
+                    android:id="@+id/b3no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="இல்லை" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="65dp"
+                    android:text="12d) வீட்டு வேலைகள் போன்ற வேலைகள் நீண்ட நேரம் எடுக்கும், அல்லது நான் ஓய்வெடுக்க நிறுத்த வேண்டும்"
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/b4yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="ஆம்" />
+
+                <CheckBox
+                    android:id="@+id/b4no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="இல்லை" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="65dp"
+                    android:text="12e) நான் ஒரு படிக்கட்டு ஏறி நடந்தால், நான் நிறுத்த வேண்டும் அல்லது வேகத்தைக் குறைக்க வேண்டும்"
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/b5yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="ஆம்" />
+
+                <CheckBox
+                    android:id="@+id/b5no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="இல்லை" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="65dp"
+                    android:text="12f) நான் அவசரப்பட்டாலோ அல்லது வேகமாக நடந்தாலோ, நான் மெதுவாகச் செல்ல வேண்டும் அல்லது நிறுத்த வேண்டும்"
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/b6yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="ஆம்" />
+
+                <CheckBox
+                    android:id="@+id/b6no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="இல்லை" />
+
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="180dp"
+                    android:text="12g) என் சுவாசம் மலைகளில் நடப்பது, படிக்கட்டுகளில் பொருட்களை எடுத்துச் செல்வது, திருமணம், நடனம், கிண்ணம் அல்லது கோல்ஃப் விளையாடுவது போன்ற லேசான தோட்டக்கலை போன்றவற்றைச் செய்வதை கடினமாக்குகிறது."
+                    android:textColor="@color/black"
+                    />
+                <CheckBox
+                    android:id="@+id/b7yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="ஆம்" />
+                <CheckBox
+                    android:id="@+id/b7no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="இல்லை" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="200dp"
+                    android:text="12h) அதிக சுமைகளைச் சுமந்து செல்வது, தோட்டத்தை தோண்டுவது அல்லது பனியைத் தோண்டுவது, ஓடுவது அல்லது விறுவிறுப்பாக நடப்பது (மணிக்கு 5 மைல்கள்), டென்னிஸ் விளையாடுவது அல்லது நீந்துவது போன்ற விஷயங்களைச் செய்வதை என் சுவாசம் கடினமாக்குகிறது."
+                    android:textColor="@color/black"
+                    />
+                <CheckBox
+                    android:id="@+id/b8yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="ஆம்" />
+                <CheckBox
+                    android:id="@+id/b8no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="இல்லை" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13) உங்கள் மார்பு பொதுவாக உங்கள் அன்றாட வாழ்க்கையை எவ்வாறு பாதிக்கிறது என்பதை நாங்கள் அறிய விரும்புகிறோம். ஒவ்வொரு அறிக்கைக்கும் உங்கள் சுவாசத்தின் காரணமாக எது உங்களுக்குப் பொருந்தும் என்பதைச் சொல்லுங்கள்."
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="100dp"
+                    android:text="13a) என்னால் விளையாட்டுகளை விளையாடவோ அல்லது பிற உடல் செயல்பாடுகளையோ செய்ய முடியாது"
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/c1yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="ஆம்" />
+
+                <CheckBox
+                    android:id="@+id/c1no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="இல்லை" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="70dp"
+                    android:text="13b) பொழுதுபோக்கு அல்லது பொழுதுபோக்கிற்காக என்னால் வெளியே செல்ல முடியாது"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    android:id="@+id/c2yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="ஆம்" />
+
+                <CheckBox
+                    android:id="@+id/c2no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="இல்லை" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="60dp"
+                    android:text="13c) நான் ஷாப்பிங் செய்ய வீட்டை விட்டு வெளியே செல்ல முடியாது"
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/c3yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="ஆம்" />
+
+                <CheckBox
+                    android:id="@+id/c3no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="இல்லை" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="52dp"
+                    android:text="13d) என்னால் வீட்டு வேலைகளைச் செய்ய முடியாது"
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/c4yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="ஆம்" />
+
+                <CheckBox
+                    android:id="@+id/c4no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="இல்லை" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="65dp"
+                    android:text="13e) நான் என் படுக்கை அல்லது நாற்காலியில் இருந்து வெகுதூரம் நகர முடியாது"
+                    android:textColor="@color/black"
+                    />
+                <CheckBox
+                    android:id="@+id/c5yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="ஆம்" />
+                <CheckBox
+                    android:id="@+id/c5no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="இல்லை" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="14) உங்கள் சுவாச பிரச்சனை உங்களை எவ்வாறு பாதிக்கிறது? தயவுசெய்து ஒரு பதிலைத் தேர்ந்தெடுக்கவும்"
+                >
+            </TextView>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="நான் செய்ய விரும்பும் எதையும் செய்வதிலிருந்து அவர்கள் என்னைத் தடுக்கவில்லை"
+                android:textColor="@color/black"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="நான் செய்ய விரும்பும் ஒன்று அல்லது இரண்டு விஷயங்களைச் செய்வதிலிருந்து அவர்கள் என்னைத் தடுக்கிறார்கள்"
+                android:textColor="@color/black"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="நான் செய்ய விரும்பும் பெரும்பாலான விஷயங்களைச் செய்வதிலிருந்து அவர்கள் என்னைத் தடுக்கிறார்கள்"
+                android:textColor="@color/black"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="நான் செய்ய விரும்பும் அனைத்தையும் செய்வதிலிருந்து அவர்கள் என்னைத் தடுக்கிறார்கள்"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/radiusc1"
+                android:text="Submit"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

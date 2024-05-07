@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Add Patient"
+        android:icon="@drawable/addpatient"
+        android:id="@+id/P"
+        />
+    <item
+        android:title="Add Exercise Videos"
+        android:icon="@drawable/upload"
+        android:id="@+id/AB"
+        />
+    <item
+        android:title="Appointment Acceptance"
+        android:icon="@drawable/approve"
+        android:id="@+id/QF"
+        />
+    <item
+        android:title="View Patient"
+        android:icon="@drawable/psearch"
+        android:id="@+id/BS"
+        />
+
+
+</menu>

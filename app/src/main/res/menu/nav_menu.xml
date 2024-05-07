@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Profile"
+        android:icon="@drawable/baseline_account_circle_24"
+        android:id="@+id/P"
+        />
+    <item
+        android:title="AppointmentBooking"
+        android:icon="@drawable/cal"
+        android:id="@+id/AB"
+        />
+    <item
+        android:title="Questionaries"
+        android:icon="@drawable/baseline_question_mark_24"
+        android:id="@+id/QF"
+        />
+    <item
+        android:title="BookedSlots"
+        android:icon="@drawable/bs"
+        android:id="@+id/BS"
+        />
+
+    <item
+        android:title="Message to Your Doctor"
+        android:icon="@drawable/baseline_chat_24"
+        android:id="@+id/mes"
+        />
+
+
+</menu>

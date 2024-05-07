@@ -1,0 +1,1357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/topbar"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ST GEORGE'S RESPIRATORY QUESTIONNAIRE"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            />
+    </RelativeLayout>
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PART 1"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1) I cough"
+                    android:textColor="@color/black"/>
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/r1o1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Most days a week" />
+
+                    <RadioButton
+                        android:id="@+id/r1o2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Several days a week" />
+                    <RadioButton
+                        android:id="@+id/r1o3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Only with respiratory infections" />
+
+                    <RadioButton
+                        android:id="@+id/r1o4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Not at all" />
+
+                </RadioGroup>
+
+
+
+            </LinearLayout>  <!--end-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2) I bring up phlegm"
+                    android:textColor="@color/black"
+                    />
+                <RadioGroup
+                    android:id="@+id/radioGroup2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/r2o1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Most day a week" />
+
+                    <RadioButton
+                        android:id="@+id/r2o2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Several days a week" />
+                    <RadioButton
+                        android:id="@+id/r2o3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Only with respiratory infections" />
+
+                    <RadioButton
+                        android:id="@+id/r2o4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Not at all" />
+
+                </RadioGroup>
+            </LinearLayout><!--end-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:text="3) I have shortness of breath"
+                    android:textColor="@color/black"/>
+                <RadioGroup
+                    android:id="@+id/radioGroup3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/r3o1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Most days a week" />
+
+                    <RadioButton
+                        android:id="@+id/r3o2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Several days a week" />
+                    <RadioButton
+                        android:id="@+id/r3o3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Not at all" />
+
+
+
+                </RadioGroup>
+
+
+
+            </LinearLayout><!--end-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4) I have attacks of wheezing"
+                    android:textColor="@color/black"/>
+                <RadioGroup
+                    android:id="@+id/radioGroup4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/r4o1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Most days a week" />
+
+
+                    <RadioButton
+                        android:id="@+id/r4o3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Several days a week" />
+                    <RadioButton
+                        android:id="@+id/r4o4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Only with resipiratoey infections" />
+
+                    <RadioButton
+                        android:id="@+id/r4o5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Not at all" />
+
+                </RadioGroup>
+
+
+
+            </LinearLayout><!--end-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="5)How many attacks of chest trouble did you have duringthe last year?"/>
+                <RadioGroup
+                    android:id="@+id/radioGroup5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/r5o1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3 or more attacks" />
+
+                    <RadioButton
+                        android:id="@+id/r5o2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 or 2 attacks" />
+                    <RadioButton
+                        android:id="@+id/r5o3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="None" />
+
+
+
+                </RadioGroup>
+
+
+
+            </LinearLayout><!--end-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="6) How often do you have gooddays(with few respiratory problems)? "/>
+                <RadioGroup
+                    android:id="@+id/radioGroup6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/r6o1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No good days" />
+
+                    <RadioButton
+                        android:id="@+id/r6o2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A few good days" />
+                    <RadioButton
+                        android:id="@+id/r6o3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Most days are good" />
+
+                    <RadioButton
+                        android:id="@+id/r6o4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Every day is good" />
+
+                </RadioGroup>
+
+
+
+            </LinearLayout><!--end-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="7)If you have a wheeze, is it worse when you get up in the morning"/>
+                <RadioGroup
+                    android:id="@+id/radioGroup7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/r7o1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NO" />
+
+                    <RadioButton
+                        android:id="@+id/r7o2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes" />
+                </RadioGroup>
+
+
+
+            </LinearLayout><!--end-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="part 2"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="8) How could you describe your respiratory problmes?"/>
+                <RadioGroup
+                    android:id="@+id/radioGroup8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/r8o1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cause me a lot of problems or are the most important physical problems i have," />
+
+                    <RadioButton
+                        android:id="@+id/r8o2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cause me a few problems"/>
+                    <RadioButton
+                        android:id="@+id/r8o3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cause no problems"  />
+                </RadioGroup>
+            </LinearLayout><!--end-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="9)Question about what activities usually make you feel breathless. For each statement , please tell me which applies to you these days"/>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1">
+
+                <!-- Header row -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="False"
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="True"
+                        android:padding="8dp" />
+
+                </TableRow>
+
+                <!-- Data rows -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="9a) Washing or dressing yourself"
+                        android:padding="8dp" />
+
+                    <CheckBox
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="9b) Walking around the house"
+                        android:padding="8dp" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="9c) Walking outside on the level ground"
+                        android:padding="8dp" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="9d) Walking up a flight of stairs"
+                        android:padding="8dp" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="9e) walking up hills"
+                        android:padding="8dp" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </TableRow>
+
+            </TableLayout><!--end-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="10) Some more questions about your cough and breathlessness .For each statement . Please tell me which applies to you these days."/>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+
+
+                >
+
+                <!-- Header row -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="False"
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="True"
+                        android:padding="8dp" />
+
+                </TableRow>
+
+                <!-- Data rows -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="10a) Coughing hurts"
+                        android:padding="8dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="10b) Coughing  makes me tired"
+                        android:padding="8dp" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="10c) I am short of breathe when i talk"
+                        android:padding="8dp" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="10d) I am short of breath when i bend over"
+                        android:padding="8dp" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="10e) My Cough or breathing disturb my sleep"
+                        android:padding="8dp" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="10f) I get exhausted easily"
+                        android:padding="8dp" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </TableRow><!--end-->
+            </TableLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="11) Questions about other effects that your chest trouble may have on you .For each statement . please tell me  which appliesto you these days"/>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                >
+
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="70dp"
+                    android:text="11a) My cough or breathing is embarrassing in public"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    android:id="@+id/a1yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/a1no1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="70dp"
+                    android:text="11b) My respiratory problems are a nuisance to my family, friends , or neighbors"
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/a2yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/a2no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="70dp"
+                    android:text="11c) I get afraid or panic when i cannot catch my breathe"
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/a3yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/a3no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="60dp"
+                    android:text="11d) I feel that i am not in control of my respiratory problems"
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/a4yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/a4no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="90dp"
+                    android:text="11e) I have become frail or an invalid because of my respiratory  problems"
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/a5yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/a5no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="52dp"
+                    android:text="11f) Exercise is not safe for me"
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/a6yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/a6no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="52dp"
+                    android:text="11g) Everything seems too much of an effort"
+                    android:textColor="@color/black"
+                    />
+                <CheckBox
+                    android:id="@+id/a7yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="Yes" />
+                <CheckBox
+                    android:id="@+id/a7no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12) These are questions about how your activities might be affected by your respiratory problems . For each statment ,please tell me which applies toy you because of your breathing"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="65dp"
+                    android:text="12a) I take a long time to get washed or dressed"
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/b1yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/b1no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="65dp"
+                    android:text="12b) I cannot take a bath or shower , or i take a long time to do it "
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/b2yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/b2no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="65dp"
+                    android:text="12c) I walk slower than other people , or i stop to rest"
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/b3yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/b3no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="65dp"
+                    android:text="12d) Jobs such as house chores take a long time , or I have to stop to rest"
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/b4yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/b4no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="65dp"
+                    android:text="12e) If i walk up one flight of stairs, I have to stop or slow down"
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/b5yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/b5no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="65dp"
+                    android:text="12f) IF i hurry or walk fast, I have to go slowly or stop"
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/b6yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/b6no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No" />
+
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="180dp"
+                    android:text="12g) My breathing makes it difficult to do things such as walk up hills , carry things up stairs, do light gardening such as wedding , dance, bowl, or play golf"
+                    android:textColor="@color/black"
+                    />
+                <CheckBox
+                    android:id="@+id/b7yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="Yes" />
+                <CheckBox
+                    android:id="@+id/b7no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="200dp"
+                    android:text="12h) My breathing makes it difficult to do things such as carry heavy loads , dig the garden or shovel snow , jog or walk brisky (5 miles per hour),play tennis,or swim"
+                    android:textColor="@color/black"
+                    />
+                <CheckBox
+                    android:id="@+id/b8yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Yes" />
+                <CheckBox
+                    android:id="@+id/b8no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13) We should like to know how your chest usually effects your daily life.For each statement please tell me which applies to you because of your breathing."
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="100dp"
+                    android:text="13a) I Cannot play sports or do other  physical activities"
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/c1yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/c1no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="70dp"
+                    android:text="13b) I cannot go out for entertainment or recreation"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    android:id="@+id/c2yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/c2no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="60dp"
+                    android:text="13c) I cannot go out of the house to do the shopping"
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/c3yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/c3no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="52dp"
+                    android:text="13d) I cannot do household chores"
+                    android:textColor="@color/black"
+                    />
+
+                <CheckBox
+                    android:id="@+id/c4yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/c4no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="65dp"
+                    android:text="13e) I cannot move far from my bed or chair"
+                    android:textColor="@color/black"
+                    />
+                <CheckBox
+                    android:id="@+id/c5yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:text="Yes" />
+                <CheckBox
+                    android:id="@+id/c5no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="14) How do your respiratory problem affects you ? Please pick one response"
+                >
+            </TextView>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="They do not stop me from doing anything i would like to do"
+                android:textColor="@color/black"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="They stop me from doing one or two things i would like to do"
+                android:textColor="@color/black"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="They stop me from doing most of the things i would like to do"
+                android:textColor="@color/black"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="They stop me from doing everything i would like to do"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/radiusc1"
+                android:text="Submit"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

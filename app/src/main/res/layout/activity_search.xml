@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Top Bar Layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/topbar"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient Search"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- EditText for Search -->
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#FFFFFF"
+        android:hint="Search Patient ID"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <!-- RecyclerView for Patient List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/editTextSearch"
+        android:background="@color/white"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

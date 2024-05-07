@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentLayout"
+    tools:context=".dlogin">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="471dp"
+        android:src="@drawable/img" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        app:cardCornerRadius="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/gradient1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txt"
+                android:layout_width="370dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/radius"
+                android:backgroundTintMode="src_over"
+                android:ems="10"
+                android:paddingLeft="20dp"
+                android:hint="D_ID"
+                android:elevation="5dp"/>
+            <EditText
+                android:id="@+id/txt1"
+                android:layout_width="370dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/radius"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:paddingLeft="20dp"
+                android:elevation="5dp"
+                />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="370dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="50dp"
+
+                android:background="@drawable/radiusc1"
+                android:text="Login"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

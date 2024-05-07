@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+   <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/topbar"
+    android:orientation="horizontal"
+
+    >
+
+
+       <TextView
+           android:id="@+id/pName"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:text="form"
+           android:textColor="@color/black"
+           android:textSize="20dp"
+           android:textStyle="bold" />
+
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btnEss1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:background="@drawable/radiusc1"
+            android:text="STOP-BANG sleep Apnea Questionnaire"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnEss2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+
+            android:layout_marginEnd="20dp"
+
+            android:background="@drawable/radiusc1"
+            android:text="Epsworth sleepiness Score(ESS)"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnmmr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:background="@drawable/radiusc1"
+            android:text="Modified Medical Research Council Dyspnoea Scale "
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/btnmbds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/radiusc1"
+            android:text="Modified Borg Dyspnea Scale"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnsmwt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/radiusc1"
+            android:text="Six Minute Walk Test Worksheet"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/btnpft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/radiusc1"
+            android:text="Pulmonary Function test"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

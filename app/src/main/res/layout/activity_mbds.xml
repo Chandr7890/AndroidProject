@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mbds">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/topbar"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:text="Modified Borg Dyspnea Scale"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="397dp"
+        android:layout_height="612dp"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:text="How much difficult is your breathing causing you right now?"
+                />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+
+                >
+
+                <RadioButton
+                    android:id="@+id/rone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="0 | Nothing at all"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rtwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checked="false"
+                    android:text="1 | Very,Very slight"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+
+                <RadioButton
+                    android:id="@+id/rthree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checked="false"
+                    android:text="2 | very slight"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rfour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checked="false"
+                    android:text="3 | Slight"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rfive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:checked="false"
+                    android:text="4 | Moderate"
+
+                    android:textSize="15sp" />
+                <RadioButton
+                    android:id="@+id/rsix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:checked="false"
+                    android:text="5 | Somewhat severe"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+
+                <RadioButton
+                    android:id="@+id/rseven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:checked="false"
+                    android:text="6 | severe"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/reight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checked="false"
+                    android:text="7 | Very severe"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rnine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:checked="false"
+                    android:text="8 | Very , Very severe(almost maximal)"
+
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checked="false"
+                    android:text="9 | almost maximal"
+                    android:textSize="15sp" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/radiusc1"
+        android:text="Submit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white" />
+
+
+
+
+</RelativeLayout>
